@@ -9,18 +9,24 @@
 }*/
 </style>
 </head>
-<body style="background-image:url(a.jpg);background-position:center;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;">
+<body style="background-image:url(a.jpg);background-position:center;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;overflow:scroll;">
 <div style="position:absolute;bottom:0px;right:40px;">
-<div id="p"  style="position:absolute;top:-410px;right:0px;width:450px;height:350px;background-color:#555;z-index:1;transform:scale(0);transition:1s;opacity:0.7;border:none;border-bottom:5px;border-radius:0%;overflow:auto;">
-<h3 align="center" style="font-family:AR DESTINE;dispay:inline-block;">WELCOME Im CHATTER</h3>
-<img src="30.gif" alt="chatter" style="position:absolute;top:20px;height:100px;width:200px;left:118px;display:inline-block;opacity:1;">
+<div id="v" style="position:absolute;top:-410px;right:0px;background-color:#555;opacity:0.7;width:450px;height:60px;z-index:2;transform:scale(0);">
+<h3 align="center" style="font-family:AR DESTINE;dispay:inline-block;position:absolute;top:-15px;left:120px;">WELCOME Im CHATTER</h3>
+<img src="30.gif" alt="chatter" style="position:absolute;top:-10px;height:100px;width:200px;left:118px;display:inline-block;opacity:1;z-index:2;">
+<div style="position:absolute;top:-10px;left:0px;z-index:3;"><img id="o" src="31.gif" style="position:sticky;top:-520px;left:-580px;height:100px;width:120px;display:none;"/></div>
 <br>
+</div>
+<div id="p"  style="position:absolute;top:-350px;right:0px;width:450px;height:290px;background-color:#555;z-index:1;transform:scale(0);transition:1s;opacity:0.7;border:none;border-bottom:5px;border-radius:0%;overflow:auto;">
+<!--<h3 align="center" style="font-family:AR DESTINE;dispay:inline-block;">WELCOME Im CHATTER</h3>
+<img src="30.gif" alt="chatter" style="position:absolute;top:20px;height:100px;width:200px;left:118px;display:inline-block;opacity:1;">
+<br>-->
 <h4 style="display:inline-block;">Whats Your name Sir?</h4><br><h4 style="display:inline-block;position:absolute;top:120px;">This is the chatter version 1.o</h4>
 <form id="r1" action="javascript:void(0)" name="form1" style="z-index:3;top:130px;right:0px;position:absolute;" >
 <input id="z1" type="search" name="i1" placeholder="Type over here" style="height:40px;width:250px;" autofocus="true" onsearch="e()">
 
 <!--<input id="z2" type="search" name="i1" placeholder="Type over here" style="height:40px;width:250px;" autofocus="true" onsearch="f()">-->
-<img id="o" src="31.gif" style="position:absolute;top:-120px;left:-180px;height:100px;width:120px;display:none;"/>
+
 <div id="u" style="position:absolute;top:160px;left:-170px;"></div>
 </form>
 </div>
@@ -28,12 +34,12 @@
 ondblclick="b()">
 <span style="position:absolute;"><img src="27.png" style="width:40px;height:40px;"/><p align="center"style="position:absolute;top:-10px;right:-140px;font-family:AR DESTINE;font-size:26px;">Chatter</p></span>
 </div>
-<img src="robo1.gif" style="display:none;"/>
-<img src="robo2.gif" style="display:none;"/>
-<img src="robo3.gif" style="display:none;"/>
-<img src="robo4.gif" style="display:none;"/>
-<img src="robo5.gif" style="display:none;"/>
-<img src="robo6.gif" style="display:none;"/>
+<img id="k1" src="robo1.gif" style="display:none;z-index:5;position:absolute;top:-320px;left:-670px;"/>
+<img id="r2" src="robo2.gif" style="display:none;position:absolute;top:-320px;left:-670px;"/>
+<img id="r3" src="robo3.gif" style="display:none;z-index:-1;position:absolute;top:-320px;left:-670px;"/>
+<img id="r4" src="robo4.gif" style="display:none;z-index:-3;position:absolute;top:-320px;left:-670px;"/>
+<img id="r5" src="robo5.gif" style="display:none;z-index:-4;width:200px;height:200px;position:absolute;top:-320px;left:-670px;"/>
+<img id="r6" src="robo6.gif" style="display:none;z-index:-2;width:200px;height:200px;position:absolute;top:-320px;left:-670px;"/>
 <script>
 var q1;
 
@@ -95,6 +101,8 @@ function d()
 	var x=document.forms["form1"]["i1"].value;
 	if(x!="")
 	{
+			document.getElementById("r6").style.transform="scale(0)";
+			document.getElementById("r4").style.display="block";
 			var u=document.createElement("p");
 			u.setAttribute("style","position:absolute;top:50px;left:-170px;");
 	var v=document.createTextNode("\n\n\n WELCOME TO CHATTER    "+x+"  How May I Help You?");
@@ -169,7 +177,7 @@ if((setTimeout(g,3000))==true)
 	//var p1=document.createElement("img");
 //document.getElementById("o").style.visibility="hidden";
 	//p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
-	//var p2=document.createElement("div");
+	//var p2=document.createElement("div");++\
 	//p2.setAttribute("style","position:absolute;top:150px;left:40px;height:100px;width:120px;display:block;z-index:2;background-colr:black;");
 	//document.getElementById("p").appendChild(p2);
 	
@@ -263,6 +271,8 @@ function g()
 				 //}
 		  	else if(s[i]!=r[j])
 		  	{
+		  		document.getElementById("r4").style.display="none";
+		  		document.getElementById("r5").style.display="block";
 			document.getElementById("o").style.display="none";
 		     var s1=document.createElement("a");
 		     s1.setAttribute("href","game.html");
@@ -273,6 +283,16 @@ function g()
 		     s3.appendChild(s4);
 		     s1.appendChild(s2);
 		     document.head.appendChild(s3);
+		     var s5=document.createElement("INPUT");
+		     s5.setAttribute("type","search");
+		     s5.setAttribute("name","s6");
+		     s5.setAttribute("autofocus","true");
+		     s5.setAttribute("id","s7");
+		     s5.setAttribute("onsearch","h()");
+		     document.getElementById("r1").appendChild(s5);
+             s5.setAttribute("style","position:absolute;top:280px;display:block;");
+             window.setTimeout(function() { document.getElementById("s7").focus(); },0);
+             document.forms["form1"]["x2"].disabled=true;
 		     //break;
 		     break f;
  			}
@@ -290,6 +310,16 @@ function g()
 		     s3.appendChild(s4);
 		     s1.appendChild(s2);
 		     document.head.appendChild(s3);
+		     var s5=document.createElement("INPUT");
+		     s5.setAttribute("type","search");
+		     s5.setAttribute("name","s6");
+		     s5.setAttribute("autofocus","true");
+		     s5.setAttribute("id","s7");
+		     s5.setAttribute("onsearch","h()");
+		     document.getElementById("r1").appendChild(s5);
+             s5.setAttribute("style","position:absolute;top:280px;display:block;");
+             window.setTimeout(function() { document.getElementById("s7").focus(); },0);
+             document.forms["form1"]["x2"].disabled=true;
 		     //break;
 		     break f;
  		  }
@@ -298,9 +328,48 @@ function g()
  		  	document.getElementById("o").style.display="none";
 		     var s1=document.createElement("p");
 		     s1.setAttribute("id","e1");
+		     //if(s1.setAttribute("id","e1"))
+		     //alert("Hi");
+		     var txt="Ok....  So tell me about which topic you want to chat";
+             var d=0;
 		     var s2=document.createTextNode("Ok....  So tell me about which topic you want to chat");
+		     var f=s2.length;
+             /*window.setTimeout(function(){s:while(d<f)
+             {
+             	document.getElementById("e1").innerHTML+=txt.charAt(d);
+             	d++;
+             }goto s;},50);*/
 		     var s3=document.createElement("STYLE");
 		     var s4=document.createTextNode("#e1{font-size:32px;font-family:AR Berkley;color:black;left:-120px;top:100px;cursor:pointer;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+		     var s5=document.createElement("INPUT");
+		     s5.setAttribute("type","search");
+		     s5.setAttribute("name","s6");
+		     s5.setAttribute("autofocus","true");
+		     s5.setAttribute("id","s7");
+		     s5.setAttribute("onsearch","h()");
+		     document.getElementById("r1").appendChild(s5);
+             s5.setAttribute("style","position:absolute;top:280px;display:block;");
+             window.setTimeout(function() { document.getElementById("s7").focus(); },0);
+             document.forms["form1"]["x2"].disabled=true;
+		     //break;
+		     break f;
+ 		  }
+ 		  else if(s[i]=="sleep")
+ 		  {
+ 		  	window.setTimeout(function() {document.getElementById("k1").style.display="none";},5000);
+ 		  	document.getElementById("k1").style.display="block";
+ 		  	document.getElementById("o").style.display="none";
+		     var s1=document.createElement("p");
+		     s1.setAttribute("id","e2");
+		     document.getElementById("r4").style.display="none";
+		     b();
+		     var s2=document.createTextNode("See I have gone to sleep");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("#e2{font-size:18px;font-family:AR Berkley;color:black;left:-120px;top:100px;cursor:pointer;}");
 		     document.getElementById("u").appendChild(s1);
 		     s3.appendChild(s4);
 		     s1.appendChild(s2);
@@ -408,16 +477,16 @@ function i()
 	var l1=s.length;
 	var r=["tumhare","hai","kya","paas","hum","humein","ham","khelna","chahte","hain","khila","do"];
 	var l2=r.length;
-	/*if(c==0)
-	{
-	for(var i=0;i<l2;i++)
-	{
-		for(var j=0;j<l1;j++)
+	//if(c==0)
+	//{
+	//for(var i=0;i<l2;i++)
+	//{
+		/*for(var j=0;j<l1;j++)
 		{
            if(s[j]=="game")
            {
-           	j=0;
-           	i=0;
+           //	j=0;
+           //	i=0;
 			if(s[j]==r[i])
 			{
 				document.getElementById("o").style.display="none";
@@ -434,24 +503,24 @@ function i()
      break;
 			}
 		}
-		}
-	}
-    }*/
+		}*/
+	//}
+   // }
 	/*else if(c==1)*/
    // {
-   	var c=parseInt("0");
-	f:for(var j=0;j<l2;j++)
-	{
+   //	var c=parseInt("0");
+	//f:for(var j=0;j<l2;j++)
+	//{
        
 		  	for(var i=0;i<l1;i++)
             {
             	if(s[i]=="game")
             	{
             		document.getElementById("o").style.display="none";
-            	i=0;
-            	j=0;
+            	//i=0;
+            	//j=0;
                 //pos=i;
-            	if(s[i]==r[j])
+            	/*if(s[i]==r[j])
 		         {
 		  	       document.getElementById("o").style.display="none";
 				     var s1=document.createElement("a");
@@ -465,47 +534,48 @@ function i()
 				     document.head.appendChild(s3);
 				     //c++;
 				     
-				 }
+				 }*/
 				// if(c>=1)
 				// break f;
 				 //else 
 				// {
 				 	
 				 //}
-		  	else if(s[i]!=r[j])
-		  	{
+		  	//else if(s[i]!=r[j])
+		  	//{
 		  	var txt="We have only this game available in our website.";
 		  	var j=0;
 		  	var speed=13000;
 		  	//typeWriter();
-			document.getElementById("o").style.display="none";
+			//document.getElementById("o").style.display="none";
 		     var s1=document.createElement("a");
 		     s1.setAttribute("href","game.html");
 		     s1.setAttribute("target","_blank");
-		     var s5=document.createElement("p");
+		     var s5=document.createTextNode("I have only this game  with me");
+		    // var s5=document.createElement("p");
 		     s1.appendChild(s5);
 
-		     s5.setAttribute("id","demo");
+		     s1.setAttribute("id","demo");
 		     //var s2=document.createTextNode("We have only this game available in our website.");
 		     var s3=document.createElement("STYLE");
-		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+		     var s4=document.createTextNode("#demo{font-size:22px;font-family:AR Berkley;color:black;left:0px;top:150px;position:absolute;}#demo:link{text-decoration:none;}#demo:hover{text-decoration:underline;}");
 		     document.getElementById("u").appendChild(s1);
 		     s3.appendChild(s4);
 		    // s5.appendChild(s2);
 		     document.head.appendChild(s3);
 		   // function typeWriter() {(setTimeout(i, speed)==true)
-		   	if(setTimeout(i, speed)==true)
+		   	/*if(setTimeout(i, speed)==true)
 		   	{
  					 if(j < txt.length) {
    					 document.getElementById("demo").innerHTML += txt.charAt(j);
    					 j++;
    					 setTimeout(i, speed);
   						}
-  					}
+  					}*/
   					//}
 		     //break;
-		     break f;
- 			}
+		     //break f;
+ 			//}
  		  }
  		  else if(s[i]=="home"||s[i]=="Home")
  		  {
@@ -515,13 +585,13 @@ function i()
 		     s1.setAttribute("target","_blank");
 		     var s2=document.createTextNode("Click here to go to home page..");
 		     var s3=document.createElement("STYLE");
-		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;cursor:pointer;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;position:absolute;left:120px;top:180px;cursor:pointer;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
 		     document.getElementById("u").appendChild(s1);
 		     s3.appendChild(s4);
 		     s1.appendChild(s2);
 		     document.head.appendChild(s3);
 		     //break;
-		     break f;
+		     //break f;
  		  }
  		  else if(s[i]=="chat"||s[i]=="talk"||s[i]=="message")
  		  {
@@ -546,7 +616,7 @@ function i()
              window.setTimeout(function() { document.getElementById("s7").focus(); },0);
              document.forms["form1"]["x2"].disabled=true;
 		     //break;
-		     break f;
+		    // break f;
  		  }
  		  else if(s[i]=="news"||s[i]=="daily news"||s[i]=="News")
  		  {
@@ -569,13 +639,13 @@ function i()
 		     s1.appendChild(s2);
 		     document.head.appendChild(s3);
              document.head.appendChild(g4);
-             break f;
+            // break f;
  		  }
 
      //document.getElementById("u").appendChild("s1");
-		}
-	}
-//}
+		//}
+	//}
+}
 	/*document.getElementById("o").style.display="none";
 	 var v1=document.getElementById("a1").value;
 	 if(v1=="mind game")
@@ -611,10 +681,13 @@ function a()
 {
 	//document.getElementById("b").style.display="block";
 	document.getElementById("p").style.transform="scale(1)";
+	document.getElementById("v").style.transform="scale(1)";
 	//setTimeout(5000);
 	document.getElementById("p").style.transition=" .4s ease-in-out";
+	document.getElementById("v").style.transition=" .4s ease-in-out";
 	window.setTimeout(function() { document.getElementById("z1").focus(); },0);
 	//document.getElementsByClassName("s").style.display="block";
+	document.getElementById("r6").style.display="block";
 }
 function c()
 {
@@ -627,8 +700,16 @@ function b()
 {
 	//document.getElementById("b").style.display="block";
 	document.getElementById("p").style.transform="scale(0)";
+	document.getElementById("v").style.transform="scale(0)";
 	setTimeout(5000);
 	//document.getElementsByClassName("s").style.display="block";
+}var txt="Ok....  So tell me about which topic you want to chat";
+function u1()
+{
+window.setTimeout(function(){ if (i < txt.length) {
+    document.getElementById("e1").innerHTML += txt.charAt(i);
+    i++;
+  }u1();},50);
 }
 /*function b()
 {
