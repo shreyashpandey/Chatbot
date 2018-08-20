@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>chattter</title>
+
+<style>
+/*#p{
+	transition:height .4s ease-in-out;
+}*/
+</style>
+</head>
+<body style="background-image:url(a.jpg);background-position:center;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;">
+<div style="position:absolute;bottom:0px;right:40px;">
+<div id="p"  style="position:absolute;top:-410px;right:0px;width:450px;height:350px;background-color:#555;z-index:1;transform:scale(0);transition:1s;opacity:0.7;border:none;border-bottom:5px;border-radius:0%;overflow:auto;">
+<h3 align="center" style="font-family:AR DESTINE;dispay:inline-block;">WELCOME Im CHATTER</h3>
+<img src="30.gif" alt="chatter" style="position:absolute;top:20px;height:100px;width:200px;left:118px;display:inline-block;opacity:1;">
+<br>
+<h4 style="display:inline-block;">Whats Your name Sir?</h4><br><h4 style="display:inline-block;position:absolute;top:120px;">This is the chatter version 1.o</h4>
+<form id="r1" action="javascript:void(0)" name="form1" style="z-index:3;top:130px;right:0px;position:absolute;" >
+<input id="z1" type="search" name="i1" placeholder="Type over here" style="height:40px;width:250px;" autofocus="true" onsearch="e()">
+
+<!--<input id="z2" type="search" name="i1" placeholder="Type over here" style="height:40px;width:250px;" autofocus="true" onsearch="f()">-->
+<img id="o" src="31.gif" style="position:absolute;top:-120px;left:-180px;height:100px;width:120px;display:none;"/>
+<div id="u" style="position:absolute;top:160px;left:-170px;"></div>
+</form>
+</div>
+<div  style="display:block;position:absolute;top:-60px;right:0px;width:450px;height:50px;background-color:#0099B9;color:white;" onclick="a()"
+ondblclick="b()">
+<span style="position:absolute;"><img src="27.png" style="width:40px;height:40px;"/><p align="center"style="position:absolute;top:-10px;right:-140px;font-family:AR DESTINE;font-size:26px;">Chatter</p></span>
+</div>
+<img src="robo1.gif" style="display:none;"/>
+<img src="robo2.gif" style="display:none;"/>
+<img src="robo3.gif" style="display:none;"/>
+<img src="robo4.gif" style="display:none;"/>
+<img src="robo5.gif" style="display:none;"/>
+<img src="robo6.gif" style="display:none;"/>
+<script>
+var q1;
+
+function e()
+{
+	document.forms["form1"]["i1"].disabled=true;
+	document.getElementById("o").style.display="block";
+	/*var p1=document.createElement("img");
+	p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	p1.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;");
+	document.getElementById("p").appendChild(p1);*/
+	
+ /* var p2=document.createElement("STYLE");
+	var p3=document.createTextNode("#p #o{position:absolute;top:0px;left:0px;height:20px;width:60px;}");
+	p2.appendChild(p3);*/
+
+if((setTimeout(d,3000))==true)
+{
+	/*var p2=document.createElement("img");
+	p2.setAttribute("id","o");p1.setAttribute("src","32.gif");
+	p2.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;z-index:999;");
+	document.getElementById("p").appendChild(p2);*/
+	//q1.setAttribute("style","visibility:hidden;");
+	//var p1=document.createElement("img");
+//document.getElementById("o").style.visibility="hidden";
+	//p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	//var p2=document.createElement("div");
+	//p2.setAttribute("style","position:absolute;top:150px;left:40px;height:100px;width:120px;display:block;z-index:2;background-colr:black;");
+	//document.getElementById("p").appendChild(p2);
+	
+	//var parent = document.getElementById("p");
+//var child = document.getElementById("o");
+//parent.removeChild(child);
+d();
+}
+}
+/*function f()
+{
+	do{
+		document.forms["form1"]["i1"].disabled=true;
+	var p1=document.createElement("img");
+	p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	p1.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;");
+	document.getElementById("p").appendChild(p1);
+	}
+	while(true)
+	{
+		if((setTimeout(d,3000))==true)
+      {
+		d();break;
+	  }
+	}
+}*/
+
+function d()
+{
+	document.getElementById("o").style.display="none";
+	var c=parseInt("0");
+	var x=document.forms["form1"]["i1"].value;
+	if(x!="")
+	{
+			var u=document.createElement("p");
+			u.setAttribute("style","position:absolute;top:50px;left:-170px;");
+	var v=document.createTextNode("\n\n\n WELCOME TO CHATTER    "+x+"  How May I Help You?");
+	u.appendChild(v);
+
+	document.getElementById("r1").appendChild(u);
+	 var w = document.createElement("STYLE");
+    var t = document.createTextNode("p {font-size: 16px;font-family: AR Berkley;display:inline-block;font:bold;}");
+    w.appendChild(t);
+    document.head.appendChild(w);
+   // var t2=document.createElement("FORM");
+    //t2.setAttribute("name","f1");
+   // t2.setAttribute("action","javascript:void(0)");
+    var x1 = document.createElement("INPUT");
+   x1.setAttribute("type", "search");
+   x1.setAttribute("name", "x2");
+   x1.setAttribute("id", "a1");
+   x1.setAttribute("autofocus", "true");
+   x1.setAttribute("onsearch", "f()");
+     window.setTimeout(function() { document.getElementById("a1").focus(); },0);
+    //t2.appendChild(x1);
+document.getElementById("r1").appendChild(x1);
+   x1.setAttribute("style","position:absolute;top:120px;");
+   document.forms["form1"]["i1"].disabled=true;
+   var w1 = document.createElement("STYLE");
+   var t1 = document.createTextNode("input[type=search] {width:250px;height:40px;}");
+    w1.appendChild(t1);
+    document.head.appendChild(w1);
+    x1.setAttribute("onsearch", "f()");
+    var v1=document.getElementById("a1").value;
+  // document.getElementById("p").appendChild(f1);
+   /*if(v1.value!="")
+   {
+   	//document.getElementById("o").style.display="block";
+   	var s=document.createElement("p");
+			s.setAttribute("style","position:absolute;top:240px;");
+	var s=document.createTextNode("\n\n\n Here is the link of the mind game avilable for you    "+x);
+    document.getElementById("p").appendChild(s);
+    var s1=document.createElement("p");
+			s1.setAttribute("style","position:absolute;top:280px;");
+			s1.setAttribute("href","C:\wamp64\www\game.html");
+	//var s=document.createTextNode("\n\n\n Here is the link of the mind game avilable for you    "+x);
+    document.getElementById("p").appendChild(s1);
+   }*/
+  	}
+	
+}
+function f()
+{
+	document.forms["form1"]["x2"].disabled=true;
+	window.setTimeout(function() { document.getElementById("a1").blur(); },0);
+	//document.getElementById("o").style.position="absolute";
+	//document.getElementById("o").style.top="570px;";
+	document.getElementById("o").style.display="block";
+	/*var p1=document.createElement("img");
+	p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	p1.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;");
+	document.getElementById("p").appendChild(p1);*/
+	
+ /* var p2=document.createElement("STYLE");
+	var p3=document.createTextNode("#p #o{position:absolute;top:0px;left:0px;height:20px;width:60px;}");
+	p2.appendChild(p3);*/
+
+if((setTimeout(g,3000))==true)
+{
+	document.getElementById("o").style.display="block";
+	/*var p2=document.createElement("img");
+	p2.setAttribute("id","o");p1.setAttribute("src","32.gif");
+	p2.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;z-index:999;");
+	document.getElementById("p").appendChild(p2);*/
+	//q1.setAttribute("style","visibility:hidden;");
+	//var p1=document.createElement("img");
+//document.getElementById("o").style.visibility="hidden";
+	//p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	//var p2=document.createElement("div");
+	//p2.setAttribute("style","position:absolute;top:150px;left:40px;height:100px;width:120px;display:block;z-index:2;background-colr:black;");
+	//document.getElementById("p").appendChild(p2);
+	
+	//var parent = document.getElementById("p");
+//var child = document.getElementById("o");
+//parent.removeChild(child);
+g();
+}
+}
+function g()
+{
+	var pos=parseInt("0");
+	var v1=document.getElementById("a1").value;
+	/*var l=v1.length;
+	var y1=parseInt("l");
+	var i=parseInt("0");
+	for(;i<y1;i++)
+	{
+		if(v1.charAt(i)==" ")
+
+	}*/
+	var s=v1.split(" ");
+	var d=parseInt("0");
+	var c=parseInt("0");
+	var l1=s.length;
+	var r=["tumhare","hai","kya","paas","hum","humein","ham","khelna","chahte","hain","khila","do"];
+	var l2=r.length;
+	/*if(c==0)
+	{
+	for(var i=0;i<l2;i++)
+	{
+		for(var j=0;j<l1;j++)
+		{
+           if(s[j]=="game")
+           {
+           	j=0;
+           	i=0;
+			if(s[j]==r[i])
+			{
+				document.getElementById("o").style.display="none";
+     var s1=document.createElement("a");
+     s1.setAttribute("href","game.html");
+     var s2=document.createTextNode("Tum ab humko hindi sikhaoge humpe click krkre dekh lo ek hi game hai chl jayega");
+     var s3=document.createElement("STYLE");
+     var s4=document.createTextNode("a{font-size:18px;font-family:AR Berkley;}");
+     document.getElementById("u").appendChild(s1);
+     s3.appendChild(s4);
+     s1.appendChild(s2);
+     document.head.appendChild(s3);
+     c++;
+     break;
+			}
+		}
+		}
+	}
+    }*/
+	/*else if(c==1)*/
+   // {
+   	var c=parseInt("0");
+	f:for(var j=0;j<l2;j++)
+	{
+       
+		  	for(var i=0;i<l1;i++)
+            {
+            	if(s[i]=="game")
+            	{
+            		document.getElementById("o").style.display="none";
+            	i=0;
+            	j=0;
+                //pos=i;
+            	if(s[i]==r[j])
+		         {
+		  	       document.getElementById("o").style.display="none";
+				     var s1=document.createElement("a");
+				     s1.setAttribute("href","game.html");
+				     var s2=document.createTextNode("Tum ab humko hindi sikhaoge humpe click karke dekh lo ek hi game hai chl jayega");
+				     var s3=document.createElement("STYLE");
+				     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+				     document.getElementById("u").appendChild(s1);
+				     s3.appendChild(s4);
+				     s1.appendChild(s2);
+				     document.head.appendChild(s3);
+				     //c++;
+				     
+				 }
+				// if(c>=1)
+				// break f;
+				 //else 
+				// {
+				 	
+				 //}
+		  	else if(s[i]!=r[j])
+		  	{
+			document.getElementById("o").style.display="none";
+		     var s1=document.createElement("a");
+		     s1.setAttribute("href","game.html");
+		     var s2=document.createTextNode("We have only this game available in our website.");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+		     //break;
+		     break f;
+ 			}
+ 		  }
+ 		  else if(s[i]=="home"||s[i]=="Home")
+ 		  {
+ 		  	document.getElementById("o").style.display="none";
+		     var s1=document.createElement("a");
+		     s1.setAttribute("href","register.php");
+		     s1.setAttribute("target","_blank");
+		     var s2=document.createTextNode("Click here to go to home page..");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;cursor:pointer;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+		     //break;
+		     break f;
+ 		  }
+ 		  else if(s[i]=="chat"||s[i]=="talk"||s[i]=="message")
+ 		  {
+ 		  	document.getElementById("o").style.display="none";
+		     var s1=document.createElement("p");
+		     s1.setAttribute("id","e1");
+		     var s2=document.createTextNode("Ok....  So tell me about which topic you want to chat");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("#e1{font-size:32px;font-family:AR Berkley;color:black;left:-120px;top:100px;cursor:pointer;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+		     var s5=document.createElement("INPUT");
+		     s5.setAttribute("type","search");
+		     s5.setAttribute("name","s6");
+		     s5.setAttribute("autofocus","true");
+		     s5.setAttribute("id","s7");
+		     s5.setAttribute("onsearch","h()");
+		     document.getElementById("r1").appendChild(s5);
+             s5.setAttribute("style","position:absolute;top:280px;display:block;");
+             window.setTimeout(function() { document.getElementById("s7").focus(); },0);
+             document.forms["form1"]["x2"].disabled=true;
+		     //break;
+		     break f;
+ 		  }
+     //document.getElementById("u").appendChild("s1");
+		}
+	}
+//}
+	/*document.getElementById("o").style.display="none";
+	 var v1=document.getElementById("a1").value;
+	 if(v1=="mind game")
+	 {
+     document.getElementById("u").innerHTML="How are you";
+     alert(v1);
+ }
+     var u=document.createElement("p");
+			u.setAttribute("style","position:absolute;top:170px;");
+	var v=document.createTextNode("\n\n\n WELCOME TO CHATTER    "+x+"  How May I Help You?");
+	u.appendChild(v);
+
+	document.getElementById("r1").appendChild(u);
+	 var w = document.createElement("STYLE");
+    var t = document.createTextNode("p {font: 16px AR Berkley;}");
+    w.appendChild(t);
+    document.head.appendChild(w);*/
+   
+   	//document.getElementById("o").style.display="block";
+  /* 	var s=document.createElement("p");
+			s.setAttribute("style","position:absolute;top:240px;");
+	var s2=document.createTextNode("\n\n\n Here is the link of the mind game avilable for you    "+x);
+	s.appendChild(s2);
+    document.getElementById("r1").appendChild(s);
+    var s1=document.createElement("a");
+			s1.setAttribute("style","position:absolute;top:280px;");
+			s1.setAttribute("href","C:\wamp64\www\game.html");
+	//var s=document.createTextNode("\n\n\n Here is the link of the mind game avilable for you    "+x);
+    document.getElementById("r1").appendChild(s1);*/
+   
+}
+function h()
+{
+	document.forms["form1"]["s6"].disabled=true;
+	window.setTimeout(function() { document.getElementById("s7").blur(); },0);
+	//document.getElementById("o").style.position="absolute";
+	//document.getElementById("o").style.top="570px;";
+	document.getElementById("o").style.display="block";
+	/*var p1=document.createElement("img");
+	p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	p1.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;");
+	document.getElementById("p").appendChild(p1);*/
+	
+ /* var p2=document.createElement("STYLE");
+	var p3=document.createTextNode("#p #o{position:absolute;top:0px;left:0px;height:20px;width:60px;}");
+	p2.appendChild(p3);*/
+
+if((setTimeout(i,3000))==true)
+{
+	document.getElementById("o").style.display="block";
+	/*var p2=document.createElement("img");
+	p2.setAttribute("id","o");p1.setAttribute("src","32.gif");
+	p2.setAttribute("style","position:absolute;top:120px;left:40px;height:100px;width:120px;display:block;z-index:999;");
+	document.getElementById("p").appendChild(p2);*/
+	//q1.setAttribute("style","visibility:hidden;");
+	//var p1=document.createElement("img");
+//document.getElementById("o").style.visibility="hidden";
+	//p1.setAttribute("id","o");p1.setAttribute("src","31.gif");
+	//var p2=document.createElement("div");
+	//p2.setAttribute("style","position:absolute;top:150px;left:40px;height:100px;width:120px;display:block;z-index:2;background-colr:black;");
+	//document.getElementById("p").appendChild(p2);
+	
+	//var parent = document.getElementById("p");
+//var child = document.getElementById("o");
+//parent.removeChild(child);
+i();
+}
+}
+function i()
+{
+	var pos=parseInt("0");
+	var v1=document.getElementById("s7").value;
+	/*var l=v1.length;
+	var y1=parseInt("l");
+	var i=parseInt("0");
+	for(;i<y1;i++)
+	{
+		if(v1.charAt(i)==" ")
+
+	}*/
+	var s=v1.split(" ");
+	var d=parseInt("0");
+	var c=parseInt("0");
+	var l1=s.length;
+	var r=["tumhare","hai","kya","paas","hum","humein","ham","khelna","chahte","hain","khila","do"];
+	var l2=r.length;
+	/*if(c==0)
+	{
+	for(var i=0;i<l2;i++)
+	{
+		for(var j=0;j<l1;j++)
+		{
+           if(s[j]=="game")
+           {
+           	j=0;
+           	i=0;
+			if(s[j]==r[i])
+			{
+				document.getElementById("o").style.display="none";
+     var s1=document.createElement("a");
+     s1.setAttribute("href","game.html");
+     var s2=document.createTextNode("Tum ab humko hindi sikhaoge humpe click krkre dekh lo ek hi game hai chl jayega");
+     var s3=document.createElement("STYLE");
+     var s4=document.createTextNode("a{font-size:18px;font-family:AR Berkley;}");
+     document.getElementById("u").appendChild(s1);
+     s3.appendChild(s4);
+     s1.appendChild(s2);
+     document.head.appendChild(s3);
+     c++;
+     break;
+			}
+		}
+		}
+	}
+    }*/
+	/*else if(c==1)*/
+   // {
+   	var c=parseInt("0");
+	f:for(var j=0;j<l2;j++)
+	{
+       
+		  	for(var i=0;i<l1;i++)
+            {
+            	if(s[i]=="game")
+            	{
+            		document.getElementById("o").style.display="none";
+            	i=0;
+            	j=0;
+                //pos=i;
+            	if(s[i]==r[j])
+		         {
+		  	       document.getElementById("o").style.display="none";
+				     var s1=document.createElement("a");
+				     s1.setAttribute("href","game.html");
+				     var s2=document.createTextNode("Tum ab humko hindi sikhaoge humpe click karke dekh lo ek hi game hai chl jayega");
+				     var s3=document.createElement("STYLE");
+				     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+				     document.getElementById("u").appendChild(s1);
+				     s3.appendChild(s4);
+				     s1.appendChild(s2);
+				     document.head.appendChild(s3);
+				     //c++;
+				     
+				 }
+				// if(c>=1)
+				// break f;
+				 //else 
+				// {
+				 	
+				 //}
+		  	else if(s[i]!=r[j])
+		  	{
+		  	var txt="We have only this game available in our website.";
+		  	var j=0;
+		  	var speed=13000;
+		  	//typeWriter();
+			document.getElementById("o").style.display="none";
+		     var s1=document.createElement("a");
+		     s1.setAttribute("href","game.html");
+		     s1.setAttribute("target","_blank");
+		     var s5=document.createElement("p");
+		     s1.appendChild(s5);
+
+		     s5.setAttribute("id","demo");
+		     //var s2=document.createTextNode("We have only this game available in our website.");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		    // s5.appendChild(s2);
+		     document.head.appendChild(s3);
+		   // function typeWriter() {(setTimeout(i, speed)==true)
+		   	if(setTimeout(i, speed)==true)
+		   	{
+ 					 if(j < txt.length) {
+   					 document.getElementById("demo").innerHTML += txt.charAt(j);
+   					 j++;
+   					 setTimeout(i, speed);
+  						}
+  					}
+  					//}
+		     //break;
+		     break f;
+ 			}
+ 		  }
+ 		  else if(s[i]=="home"||s[i]=="Home")
+ 		  {
+ 		  	document.getElementById("o").style.display="none";
+		     var s1=document.createElement("a");
+		     s1.setAttribute("href","register.php");
+		     s1.setAttribute("target","_blank");
+		     var s2=document.createTextNode("Click here to go to home page..");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("a{font-size:22px;font-family:AR Berkley;color:black;left:-120px;top:10px;cursor:pointer;}a:link{text-decoration:none;}a:hover{text-decoration:underline;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+		     //break;
+		     break f;
+ 		  }
+ 		  else if(s[i]=="chat"||s[i]=="talk"||s[i]=="message")
+ 		  {
+ 		  	document.getElementById("o").style.display="none";
+		     var s1=document.createElement("p");
+		     s1.setAttribute("id","e1");
+		     var s2=document.createTextNode("Ok....  So tell me about which topic you want to chat");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("#e1{font-size:32px;font-family:AR Berkley;color:black;left:-120px;top:100px;cursor:pointer;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+		     var s5=document.createElement("INPUT");
+		     s5.setAttribute("type","search");
+		     s5.setAttribute("name","s6");
+		     s5.setAttribute("autofocus","true");
+		     s5.setAttribute("id","s7");
+		     s5.setAttribute("onsearch","h()");
+		     document.getElementById("r1").appendChild(s5);
+             s5.setAttribute("style","position:absolute;top:200px;display:block;");
+             window.setTimeout(function() { document.getElementById("s7").focus(); },0);
+             document.forms["form1"]["x2"].disabled=true;
+		     //break;
+		     break f;
+ 		  }
+ 		  else if(s[i]=="news"||s[i]=="daily news"||s[i]=="News")
+ 		  {
+ 		  	 document.getElementById("o").style.display="none";
+ 		  	 var g1=document.createElement("p");
+ 		  	 g1.setAttribute("id","g2");
+ 		  	 var g3=document.createTextNode("News are very neccessary for our daily purposes and moreover they increase our daily knowledge.");
+ 		  	 g1.appendChild(g3);
+ 		  	 var g4=document.createElement("STYLE");
+ 		  	 var g5=document.createTextNode("#g2{font-size:32px;font-family:AR Berkley;color:black;left:-120px;top:130px;cursor:pointer;z-index:4;}");
+ 		  	 g4.appendChild(g5);
+ 		  	 document.getElementById("u").appendChild(g1);
+		     var s1=document.createElement("p");
+		     s1.setAttribute("id","e2");
+		     var s2=document.createTextNode("Type Y if you want to display that page in new tab and type y if you want to display it under chatbot section ");
+		     var s3=document.createElement("STYLE");
+		     var s4=document.createTextNode("#e2{font-size:32px;font-family:AR Berkley;color:black;left:-120px;top:150px;cursor:pointer;}");
+		     document.getElementById("u").appendChild(s1);
+		     s3.appendChild(s4);
+		     s1.appendChild(s2);
+		     document.head.appendChild(s3);
+             document.head.appendChild(g4);
+             break f;
+ 		  }
+
+     //document.getElementById("u").appendChild("s1");
+		}
+	}
+//}
+	/*document.getElementById("o").style.display="none";
+	 var v1=document.getElementById("a1").value;
+	 if(v1=="mind game")
+	 {
+     document.getElementById("u").innerHTML="How are you";
+     alert(v1);
+ }
+     var u=document.createElement("p");
+			u.setAttribute("style","position:absolute;top:170px;");
+	var v=document.createTextNode("\n\n\n WELCOME TO CHATTER    "+x+"  How May I Help You?");
+	u.appendChild(v);
+
+	document.getElementById("r1").appendChild(u);
+	 var w = document.createElement("STYLE");
+    var t = document.createTextNode("p {font: 16px AR Berkley;}");
+    w.appendChild(t);
+    document.head.appendChild(w);*/
+   
+   	//document.getElementById("o").style.display="block";
+  /* 	var s=document.createElement("p");
+			s.setAttribute("style","position:absolute;top:240px;");
+	var s2=document.createTextNode("\n\n\n Here is the link of the mind game avilable for you    "+x);
+	s.appendChild(s2);
+    document.getElementById("r1").appendChild(s);
+    var s1=document.createElement("a");
+			s1.setAttribute("style","position:absolute;top:280px;");
+			s1.setAttribute("href","C:\wamp64\www\game.html");
+	//var s=document.createTextNode("\n\n\n Here is the link of the mind game avilable for you    "+x);
+    document.getElementById("r1").appendChild(s1);*/
+  
+}
+function a()
+{
+	//document.getElementById("b").style.display="block";
+	document.getElementById("p").style.transform="scale(1)";
+	//setTimeout(5000);
+	document.getElementById("p").style.transition=" .4s ease-in-out";
+	window.setTimeout(function() { document.getElementById("z1").focus(); },0);
+	//document.getElementsByClassName("s").style.display="block";
+}
+function c()
+{
+	//document.getElementById("b").style.display="block";
+	document.getElementById("p").style.transform="scale(2)";
+	setTimeout(5000);
+	//document.getElementsByClassName("s").style.display="block";
+}
+function b()
+{
+	//document.getElementById("b").style.display="block";
+	document.getElementById("p").style.transform="scale(0)";
+	setTimeout(5000);
+	//document.getElementsByClassName("s").style.display="block";
+}
+/*function b()
+{
+	document.getElementById("q").style.transform="scale(1)";
+}
+function c()
+{
+	document.getElementById("r").style.transition="3s";*/
+</script>
+</body>
+</html>
